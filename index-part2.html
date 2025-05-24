@@ -1,0 +1,53 @@
+    <!-- Nouvelle section Contactez-nous -->
+    <section id="contact" class="py-16 bg-red-600 text-white relative">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-6"> Contactez-nous dès aujourd'hui</h2>
+        <p class="text-lg mb-8 max-w-2xl mx-auto">
+          Vous êtes prêt à transformer votre présence en ligne ? Discutons de vos besoins et voyons comment Hashtag Media peut vous aider à atteindre vos objectifs.
+        </p>
+        
+        <div class="space-y-6">
+          <p class="text-lg font-medium"> Téléphone : <a href="tel:+33758417994" class="underline">+33 7 58 41 79 94</a></p>
+          <p class="text-lg font-medium"> Instagram : <a href="https://instagram.com/hashtagmediapro" target="_blank" class="underline">@hashtagmediapro</a></p>
+        </div>
+        
+        <!-- CTA bouton -->
+        <div class="mt-8">
+          <a href="https://instagram.com/hashtagmediapro" target="_blank" class="inline-block bg-black text-white text-lg font-medium px-6 py-3 rounded-full shadow hover:scale-105 transition">
+             Suivez-nous sur Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <p class="mb-4">Appelez-nous aujourd'hui pour doubler votre visibilité !</p>
+            <a href="tel:+33758417994" class="text-red-600 font-bold">+33 7 58 41 79 94</a>
+            <p class="mt-4 text-sm"> 2025 Hashtag Media. Tous droits réservés. Mentions légales.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Toggle menu visibility on mobile
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
